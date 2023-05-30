@@ -16,8 +16,15 @@
 
 .containerFooter {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--margin-l);
     justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .containerFooter {
+        flex-direction: column;
+    }
 }
 
 .sectionFooter {
@@ -32,7 +39,8 @@
 
 .newsletter {
     display: flex; 
-    width: auto;
+    justify-content: space-between;
+    width: 18.75rem;
     padding: var(--margin-s);
     gap: var(--margin-s);
     background-color: var(--white);
@@ -40,6 +48,7 @@
 }
 
 .newsletterInput {
+    width: 100%;
     border: none;
     background: transparent;
     outline: none;
