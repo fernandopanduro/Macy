@@ -13,7 +13,7 @@
     margin: 0 auto;
     padding: 0 var(--margin-m);
     background-color: rgba(255, 255, 255, 0.13);
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(var(--blur-filter));
     border-radius: var(--border-radius-m);
 
     position: fixed;
