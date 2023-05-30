@@ -1,5 +1,5 @@
 .footer {
-    position: absolute;
+    position: relative;
     bottom: var(--margin-x);
     left: 0;
     right: 0;

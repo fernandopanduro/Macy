@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { BsCart2 } from 'react-icons/bs'
 
 import styles from './Header.module.css';
+import Button from '../Button/Button';
 
 export default function Header() {
   return (
@@ -32,7 +33,7 @@ export default function Header() {
       </nav>
 
       <div className={styles.btns}>
-        <button className={`${styles.btnOrder} ${styles.btn}`}>Order</button>
+        <Button text='Order' to='/order'/>
         <button className={`${styles.btnCart} ${styles.btn}`}><BsCart2 size={25}/></button>
       </div>
 

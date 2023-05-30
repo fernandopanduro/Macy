@@ -1,0 +1,22 @@
+.btnOrder {
+    background: var(--color-primary);
+    padding: var(--margin-s) var(--margin-m);
+    color: var(--white);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-s);
+    transition: var(--transition-duration);
+    width: max-content;
+}
+
+.btnOrder:hover {
+    background-color: transparent;
+}
+
+.link {
+    color: var(--white);
+}
+
+.btnOrder:hover .link {
+    color: var(--color-primary);
+}
