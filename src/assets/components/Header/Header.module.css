@@ -8,17 +8,21 @@
 }
 
 .header {
-    height: 4.5625rem;
-    max-width: min(50.5rem, 90%);
-    margin: 0 auto;
-    padding: 0 var(--margin-m);
-
     position: fixed;
     top: var(--margin-m);
     left: 0;
     right: 0;
+
+    height: 4.5625rem;
+    padding: 0 var(--margin-m);
     
     z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
 }
 
 .listItem {
@@ -67,5 +71,36 @@
 
 .btnCart {
     border: none;
+    background-color: transparent;
 }
 
+/* Menu */
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+    }
+}
+
+.menuLinks {
+    width: 100%;
+    background-color: var(--white);
+    padding: var(--margin-m);
+
+    position: fixed;
+    top: 4.5625rem;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: .1875rem;
+    z-index: 20;
+}
+
+.hide {
+    display: none;
+}

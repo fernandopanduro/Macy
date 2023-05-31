@@ -13,18 +13,18 @@ export default function Home() {
     <section className={styles.section}>
       <div className={`container ${styles.mision}`}>
         <div className={`${styles.containerDescription}`}>
-          <h2 className='title'>¿Por qué cocinar al vapor? Simplemente, sabe mejor.</h2>
-          <p className='paragraph'>Por fin, una forma de recalentar a la altura de la calidad de sus platos Mealprep. Nuestra tecnología LPS™ garantiza un recalentamiento suave para conservar el sabor y los nutrientes.</p>
-          <Button text='Nuestra misión' to='/about' />
+          <h2 className='title'>Why should you steam your lunch? It simply tastes better.</h2>
+          <p className='paragraph'>Finally, a way to reheat that matches the quality of your Mealprep dishes. Our LPS™ technology ensures gentle reheating to best preserve flavor and nutrients.</p>
+          <Button text='Our mission' to='/about' />
         </div>
         <ParallaxCard img1={img1} img2={img2} />
       </div>
       <div className={`container ${styles.mision}`}>
         <ParallaxCard img1={img1} img2={img2} />
         <div className={`${styles.containerDescription}`}>
-          <h2 className='title'>¿Por qué cocinar al vapor? Simplemente, sabe mejor.</h2>
-          <p className='paragraph'>Por fin, una forma de recalentar a la altura de la calidad de sus platos Mealprep. Nuestra tecnología LPS™ garantiza un recalentamiento suave para conservar el sabor y los nutrientes.</p>
-          <Button text='Nuestra misión' to='/about' />
+          <h2 className='title'>Smart steaming on the go. High-quality, contemporary and user-friendly.</h2>
+          <p className='paragraph'>Steasy is easy to use via app and you can even time your meal in advance. Thanks to the innovative closure system, Steasy is not only spill-proof to transport but also odor-free when steaming.</p>
+          <Button text='Product Details' to='/productdetails' />
         </div>
       </div>
       <div className={`container ${styles.order}`}>
@@ -37,8 +37,8 @@ export default function Home() {
           </Parallax>
         </ParallaxProvider>
         <div className={`glassmorphism ${styles.orderDescription}`}>
-          <h3 className='title'>Tan fácil de pedir como de usar.</h3>
-          <Button text='A la tienda' to='/order' />
+          <h3 className='title'>As easy to order as it is to use.</h3>
+          <Button text='To the store' to='/order' />
         </div>
       </div>
     </section>
