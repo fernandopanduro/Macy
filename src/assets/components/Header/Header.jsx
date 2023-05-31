@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 export default function Header() {
   return (
-    <header className={`${styles.header}`}>
+    <header className={`glassmorphism ${styles.header}`}>
       <h1 className={styles.title}>
         <Link className={styles.titleLink} to="/">
           <span className={styles.titleSpan}>

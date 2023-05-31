@@ -12,18 +12,13 @@
     max-width: min(50.5rem, 90%);
     margin: 0 auto;
     padding: 0 var(--margin-m);
-    background-color: rgba(255, 255, 255, 0.13);
-    backdrop-filter: blur(var(--blur-filter));
-    border-radius: var(--border-radius-m);
 
     position: fixed;
     top: var(--margin-m);
     left: 0;
     right: 0;
     
-    box-shadow: var(--shadow);
-    -webkit-box-shadow: var(--shadow);
-    -moz-box-shadow: var(--shadow);
+    z-index: 10;
 }
 
 .listItem {
