@@ -1,0 +1,30 @@
+.parallax {
+    position: relative;
+    width: 23.875rem;
+    height: 35rem;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-m);
+}
+
+.picture {
+    display: block;
+    border-radius: var(--border-radius-m);
+    overflow: hidden;
+}
+
+.picture1 {
+    width: 23.875rem;
+    height: 35rem;
+}
+
+.picture2 {
+    width: 281px;
+    height: 12.25rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
