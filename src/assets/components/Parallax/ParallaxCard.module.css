@@ -2,7 +2,6 @@
     position: relative;
     width: 23.875rem;
     height: 35rem;
-    margin: 0 auto;
     background-color: var(--color-primary);
     border-radius: var(--border-radius-m);
 }
@@ -14,8 +13,14 @@
 }
 
 .picture1 {
-    width: 23.875rem;
-    height: 35rem;
+    width: 23rem;
+    height: 34rem;
+}
+
+@media (max-width: 520px) {
+    .parallax {
+        transform: scale(.7);
+    }
 }
 
 .picture2 {
