@@ -69,11 +69,16 @@
 @media (max-width: 768px) {
     .orderDescription {
         align-items: center;
-        bottom: 0;
         left: 20%;
     }
 
     .orderDescription h3 {
         text-align: center;
+    }
+}
+
+@media (max-width: 525px) {
+    .orderDescription {
+        left: 0;
     }
 }

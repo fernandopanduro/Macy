@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     padding: var(--margin-x);
+    margin-top: var(--margin-top) !important;
 
     background-color: #e6e5e0;
     backdrop-filter: blur(var(--blur-filter));
