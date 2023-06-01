@@ -4,7 +4,7 @@ import img2 from '../../pictures/img/img1.jpg';
 import img1 from '../../pictures/img/img2.jpg';
 import ParallaxCard from '../../components/Parallax/ParallaxCard';
 import Button from '../../components/Button/Button';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Order from '../../components/Order/Order';
 
 
 export default function Home() {
@@ -27,20 +27,7 @@ export default function Home() {
           <Button text='Product Details' to='/productdetails' />
         </div>
       </div>
-      <div className={`container ${styles.order}`}>
-        <ParallaxProvider>
-          <Parallax
-            speed={-10} >
-            <picture className={styles.orderPicture}>
-              <img className={styles.orderImg} src={img2} alt="" />
-            </picture>
-          </Parallax>
-        </ParallaxProvider>
-        <div className={`glassmorphism ${styles.orderDescription}`}>
-          <h3 className='title'>As easy to order as it is to use.</h3>
-          <Button text='To the store' to='/order' />
-        </div>
-      </div>
+      <Order />
     </section>
     </>
   )

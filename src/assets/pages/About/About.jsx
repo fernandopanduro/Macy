@@ -2,10 +2,11 @@ import CardAbout from '../../components/CardAbout/CardAbout';
 import styles from './About.module.css';
 
 import img from '../../pictures/img/img1.jpg'
+import Order from '../../components/Order/Order';
 
 export default function About() {
   return (
-    <main className={`container`}>
+    <main className={`container ${styles.about}`}>
         <section>
             <h2 className={`title ${styles.title}`}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis sed ipsam at aspernatur, repellendus suscipit aliquam tempora porro illum.</h2>
             <h2 className={`title ${styles.title}`}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis sed ipsam at aspernatur, repellendus suscipit aliquam tempora porro illum.</h2>
@@ -37,6 +38,16 @@ export default function About() {
                 translateY={['-80px', '30px']} />
             </div>
         </section>
+
+        <img className={styles.img} src={img} alt="" />
+
+        <section>
+          <h2 className={`title ${styles.title}`}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis omnis sed ipsam at aspernatur, repellendus suscipit aliquam tempora porro illum.</h2>
+          <p className={styles.paragraph}>Hugo, un Reto</p>
+        </section>
+
+        <Order />
+
     </main>
   )
 }

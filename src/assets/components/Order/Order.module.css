@@ -1,0 +1,55 @@
+/* Order */
+.order {
+    position: relative;
+}
+
+.orderPicture {
+    display: block;
+    width: 80%;
+    max-width: 48rem;
+    max-height: 31.25rem;
+    border-radius: var(--border-radius-m);
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .orderPicture {
+        width: 100%;
+    }
+}
+
+.orderImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orderDescription {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-m);
+    padding: var(--margin-m);
+    max-width: 26.25rem;
+    height: max-content;
+
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .orderDescription {
+        align-items: center;
+        left: 20%;
+    }
+
+    .orderDescription h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 525px) {
+    .orderDescription {
+        left: 0;
+    }
+}
