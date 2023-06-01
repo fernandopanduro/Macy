@@ -36,7 +36,45 @@
 
     /* Blur */
     --blur-filter: 1rem;
+
+
+    /* --pebble-1: #f0efec;
+    --pebble-2: #e6e5e0;
+    --pebble-3: #dad8d0;
+    --green-1: #edf2ed;
+    --green-3: #c7cdc3;
+    --green-5: #617864;
+    --green-7: #242e24;
+    --green-9: #1f241f;
+    --salt-1: #f2f1ed;
+    --salt-3: #d2d0cb;
+    --salt-5: #888682;
+    --salt-7: #4c4a44;
+    --salt-9: #262522;
+    --ginger-1: #f2edf1;
+    --ginger-3: #d5d4da;
+    --ginger-5: #892561;
+    --ginger-7: #55334a;
+    --ginger-9: #382231;
+    --neutral-1: #f5f5f5;
+    --neutral-3: #d4d4d4;
+    --neutral-5: #656565;
+    --neutral-7: #404040;
+    --neutral-9: #171717;
+    --row-padding: 20px 0;
+    --gutter: 24px;
+    --page-width: calc(1224px + var(--gutter) * 2);
+    --spacing-s: 10px;
+    --spacing-m: 20px;
+    --spacing-l: 24px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 48px;
+    --border-radius-s: 8px;
+    --border-radius-m: 16px;
+    --border-radius-l: 24px; */
 }
+
+/* font-size: clamp(2rem,-1rem + 6.25vw,3rem); */
 
 * {
     font-family: var(--font-family);

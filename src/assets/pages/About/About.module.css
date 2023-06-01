@@ -17,6 +17,57 @@
     }
 }
 
+/* Presentation */
+.presentation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-x);
+}
+
+.presentationDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg {
+    background: var(--color-primary);
+    border-radius: var(--border-radius-m);
+    position: absolute;
+}
+
+.bg1 {
+    width: 30%;
+    height: 40%;
+    left: 0;
+    top: -10%;
+}
+
+.bg2 {
+    width: 40%;
+    height: 60%;
+    right: 0;
+    bottom: -15%;
+}
+
+.parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProduct {
+    width: 50rem;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .imgProduct {
+        width: 90%;
+    }
+}
+
 .img {
     border-radius: var(--border-radius-m);
 }

@@ -1,7 +1,9 @@
 import styles from './Home.module.css';
 
-import img2 from '../../pictures/img/img1.jpg';
-import img1 from '../../pictures/img/img2.jpg';
+import benefits01 from '../../pictures/img/benefits_01.jpg';
+import benefits02 from '../../pictures/img/benefits_02.jpg';
+import product from '../../pictures/img/product.png';
+
 import ParallaxCard from '../../components/Parallax/ParallaxCard';
 import Button from '../../components/Button/Button';
 import Order from '../../components/Order/Order';
@@ -17,10 +19,10 @@ export default function Home() {
           <p className='paragraph'>Finally, a way to reheat that matches the quality of your Mealprep dishes. Our LPS™ technology ensures gentle reheating to best preserve flavor and nutrients.</p>
           <Button text='Our mission' to='/about' />
         </div>
-        <ParallaxCard img1={img1} img2={img2} />
+        <ParallaxCard img2={product} img1={benefits01} />
       </div>
       <div className={`container ${styles.mision}`}>
-        <ParallaxCard img1={img1} img2={img2} />
+        <ParallaxCard img2={product} img1={benefits02} />
         <div className={`${styles.containerDescription}`}>
           <h2 className='title'>Smart steaming on the go. High-quality, contemporary and user-friendly.</h2>
           <p className='paragraph'>Steasy is easy to use via app and you can even time your meal in advance. Thanks to the innovative closure system, Steasy is not only spill-proof to transport but also odor-free when steaming.</p>

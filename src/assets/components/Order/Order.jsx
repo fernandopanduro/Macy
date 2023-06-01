@@ -1,7 +1,7 @@
 import styles from './Order.module.css';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Button from '../Button/Button';
-import img from '../../pictures/img/img1.jpg'
+import img from '../../pictures/img/products.jpg'
 
 export default function Order() {
   return (

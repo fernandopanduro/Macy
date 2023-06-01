@@ -4,7 +4,7 @@ import styles from './Contact.module.css';
 export default function Contact() {
   return (
     <section className={`container ${styles.contact}`}>
-        <h2 className={styles.title}>Tus inquietudes, nuestros correos.</h2>
+        <h2 className={`title ${styles.title}`}>Tus inquietudes, nuestros correos.</h2>
         <div className={styles.contactDetails}>
           <p>Para la mayoria de las preguntas encontrará las respuestas aquí:</p>
           <Button to='/faqs' text='FAQs' />
