@@ -8,6 +8,8 @@ import gallery4 from '../../pictures/img/gallery_04_new_front@2x.jpg';
 import gallery5 from '../../pictures/img/gallery_05_@2x.jpg';
 import product from '../../pictures/img/product.png';
 
+import video from '../../pictures/video/product_animation.mp4'
+
 import ParallaxCard from '../../components/Parallax/ParallaxCard';
 import Button from '../../components/Button/Button';
 import Order from '../../components/Order/Order';
@@ -19,8 +21,8 @@ export default function Home() {
     <section className={styles.section}>
 
       <div className={`container ${styles.container}`}>
-        <h2 className={`title ${styles.title}`}>Steaming lunch, made easy.</h2>
-        <img className={styles.img} src={product} alt="" />
+        <h2 className={`title ${styles.title} ${styles.titlePrimary}`}>Steaming lunch, made easy.</h2>
+        <video className={styles.video} src={video} autoPlay muted playsInline></video>
       </div>
 
       <div className='container'>
