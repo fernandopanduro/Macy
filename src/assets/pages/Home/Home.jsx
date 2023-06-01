@@ -2,6 +2,10 @@ import styles from './Home.module.css';
 
 import benefits01 from '../../pictures/img/benefits_01.jpg';
 import benefits02 from '../../pictures/img/benefits_02.jpg';
+import gallery1 from '../../pictures/img/gallery_01_@2x.jpg';
+import gallery2 from '../../pictures/img/gallery_02_@2x.jpg';
+import gallery4 from '../../pictures/img/gallery_04_new_front@2x.jpg';
+import gallery5 from '../../pictures/img/gallery_05_@2x.jpg';
 import product from '../../pictures/img/product.png';
 
 import ParallaxCard from '../../components/Parallax/ParallaxCard';
@@ -13,6 +17,24 @@ export default function Home() {
   return (
     <>
     <section className={styles.section}>
+
+      <div className={`container ${styles.container}`}>
+        <h2 className={`title ${styles.title}`}>Steaming lunch, made easy.</h2>
+        <img className={styles.img} src={product} alt="" />
+      </div>
+
+      <div className='container'>
+        <h2 className={`title ${styles.title}`}>Steasy is a mobile mini-steamer with built-in battery. With it, you can heat up your pre-cooked lunch anywhere with high quality.</h2>
+      </div>
+
+      <div className={`${styles.gallery}`}>
+        <img className={`${styles.img1} ${styles.img}`} src={gallery1} alt="" />
+        <img className={`${styles.img2} ${styles.img}`} src={gallery2} alt="" />
+        <img className={`${styles.img3} ${styles.img}`} src={product} alt="" />
+        <img className={`${styles.img4} ${styles.img}`} src={gallery4} alt="" />
+        <img className={`${styles.img5} ${styles.img}`} src={gallery5} alt="" />
+      </div>
+
       <div className={`container ${styles.mision}`}>
         <div className={`${styles.containerDescription}`}>
           <h2 className='title'>Why should you steam your lunch? It simply tastes better.</h2>

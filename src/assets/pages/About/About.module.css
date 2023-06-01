@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    gap: var(--margin-top);
+    gap: calc(var(--margin-x) * 2);
 }
 
 .cardsAboutContainer {

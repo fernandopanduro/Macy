@@ -74,7 +74,7 @@
     --border-radius-l: 24px; */
 }
 
-/* font-size: clamp(2rem,-1rem + 6.25vw,3rem); */
+
 
 * {
     font-family: var(--font-family);
@@ -86,6 +86,10 @@
 #root {
     width: 100%;
     min-height: 100vh;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -119,7 +123,8 @@ button {
 }
 
 .title {
-    font-size: var(--font-size-xl);
+    /* font-size: var(--font-size-xl); */
+    font-size: clamp(2rem,-1rem + 6.25vw,3rem);
 }
 
 .paragraph {
