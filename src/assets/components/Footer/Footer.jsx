@@ -12,7 +12,7 @@ export default function Footer() {
                 <h4 className={styles.title}>Newsletter</h4>
                 <label className={styles.newsletter} htmlFor="newsletter">
                     <input className={styles.newsletterInput} type="email" autoComplete='email' required placeholder='Email' />
-                    <button className={styles.btn}><AiOutlineArrowRight className={styles.newsletterRight} size={25} /></button>
+                    <button name='Arrow Newsletter' className={styles.btn}><AiOutlineArrowRight className={styles.newsletterRight} size={25} /></button>
                 </label>
             </div>
             <div className={styles.sectionFooter}>

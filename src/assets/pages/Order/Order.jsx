@@ -1,5 +1,16 @@
 import styles from './Order.module.css';
 import img from '../../pictures/img/product.png'
+import imgWebp from '../../pictures/img/product.webp'
+import imgAvif from '../../pictures/img/product.avif'
+import img2 from '../../pictures/img/product2.jpg'
+import img2Webp from '../../pictures/img/product2.webp'
+import img2Avif from '../../pictures/img/product2.avif'
+import img3 from '../../pictures/img/product3.jpg'
+import img3Webp from '../../pictures/img/product3.webp'
+import img3Avif from '../../pictures/img/product3.avif'
+import img4 from '../../pictures/img/product4.jpg'
+import img4Webp from '../../pictures/img/product4.webp'
+import img4Avif from '../../pictures/img/product4.avif'
 
 import { AiOutlineDown } from 'react-icons/ai'
 
@@ -19,10 +30,26 @@ export default function Order() {
         </div>
 
         <div className={styles.gallery}> 
-            <img className={styles.img} src={img} alt="" />
-            <img className={styles.img} src={img} alt="" />
-            <img className={styles.img} src={img} alt="" />
-            <img className={styles.img} src={img} alt="" />
+          <picture className={styles.img}>
+            <source srcSet={imgWebp} type='image/webp'/>
+            <source srcSet={imgAvif} type='image/avif'/>
+            <img width='300' height='300' decoding="async" loading="lazy" className={styles.img} src={img} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={img2Webp} type='image/webp'/>
+            <source srcSet={img2Avif} type='image/avif'/>
+            <img width='300' height='300' decoding="async" loading="lazy" className={styles.img} src={img2} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={img3Webp} type='image/webp'/>
+            <source srcSet={img3Avif} type='image/avif'/>
+            <img width='300' height='300' decoding="async" loading="lazy" className={styles.img} src={img3} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={img4Webp} type='image/webp'/>
+            <source srcSet={img4Avif} type='image/avif'/>
+            <img width='300' height='300' decoding="async" loading="lazy" className={styles.img} src={img4} alt="" />
+          </picture>
         </div>
 
         <div className={styles.descriptions} >
