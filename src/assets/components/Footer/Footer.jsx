@@ -31,10 +31,6 @@ export default function Footer() {
                             <span className={styles.listBar}></span>
                         </li>
                         <li className={styles.listItem}>
-                            <Link className={styles.listLink} to="/productdetails">Product Details</Link>
-                            <span className={styles.listBar}></span>
-                        </li>
-                        <li className={styles.listItem}>
                             <Link className={styles.listLink} to="/about">About Us</Link>
                             <span className={styles.listBar}></span>
                         </li>

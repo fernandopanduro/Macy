@@ -20,7 +20,7 @@ export default function Home() {
     <>
     <section className={styles.section}>
 
-      <div className={`container ${styles.container}`}>
+      <div className={`container ${styles.presentation}`}>
         <h2 className={`title ${styles.title} ${styles.titlePrimary}`}>Steaming lunch, made easy.</h2>
         <video className={styles.video} src={video} autoPlay muted playsInline></video>
       </div>
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <ParallaxCard img2={product} img1={benefits01} />
       </div>
-      <div className={`container ${styles.mision}`}>
+      <div className={`container ${styles.mision}  ${styles.mision2}`}>
         <ParallaxCard img2={product} img1={benefits02} />
         <div className={`${styles.containerDescription}`}>
           <h2 className='title'>Smart steaming on the go. High-quality, contemporary and user-friendly.</h2>

@@ -17,6 +17,6 @@
     color: var(--white);
 }
 
-.btnOrder:hover .link {
+.btnOrder:hover {
     color: var(--color-primary);
 }

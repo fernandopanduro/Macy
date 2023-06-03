@@ -18,7 +18,6 @@ export default function Header() {
       </div>
       <div className={`${isMenuActive ? styles.menuLinks : styles.hide}`}>
         <Link to='/'>Home</Link>
-        <Link to='/productdetails'>Product Details</Link>
         <Link to='/about'>About Us</Link>
         <Link to='/contact'>Contact</Link>
       </div>
@@ -33,10 +32,6 @@ export default function Header() {
 
       <nav className={styles.nav}>
         <ul className={styles.list}>
-            <li className={styles.listItem}>
-                <Link className={styles.listLink} to="/productdetails">Product Details</Link>
-                <span className={styles.listBar}></span>
-            </li>
             <li className={styles.listItem}>
                 <Link className={styles.listLink} to="/about">About Us</Link>
                 <span className={styles.listBar}></span>

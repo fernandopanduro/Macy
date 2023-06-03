@@ -11,6 +11,13 @@
     }
 }
 
+.presentation {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .title {
     text-align: center;
 }
@@ -37,14 +44,7 @@
 
 .video {
     width: 100%;
-    clip-path: inset(1px 1px);;
-    margin-top: var(--margin-x);
-}
-
-@media (max-width: 768px) {
-    .video {
-        margin-top: var(--margin-top);
-    }
+    clip-path: inset(1px 1px);
 }
 
 /* Gallery */
@@ -131,7 +131,7 @@
         flex-direction: column;
     }
 
-    .mision:nth-child(2) {
+    .mision2 {
         flex-direction: column-reverse;
     }
 }

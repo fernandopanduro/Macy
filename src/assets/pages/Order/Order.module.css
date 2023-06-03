@@ -1,0 +1,113 @@
+.order {
+    display: grid;
+    grid-template-columns: 24.375rem 1fr;
+    grid-template-rows: fit-content(18.75rem) 1fr;
+    grid-auto-rows: min-content;
+    gap: var(--margin-x);
+}
+
+@media (max-width: 768px) {
+    .order {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-m);
+}
+
+.description {
+    background-color: var(--light-gray);
+    padding: var(--margin-x);
+    border-radius: var(--border-radius-m);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-m);
+}
+
+.subtitle {
+    color: var(--color-primary);
+}
+
+.currentPrice {
+    font-size: var(--font-size-x);
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.previousPrice {
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.btn {
+    background: var(--color-primary);
+    padding: var(--margin-s) var(--margin-m);
+    color: var(--white);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-s);
+    transition: var(--transition-duration);
+    width: max-content;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.shipping {
+    color: rgba(0, 0, 0, .5);
+    font-weight: 700;
+}
+
+/* Description information */
+
+.description input {
+    display: none;
+}
+
+.descriptionInformation {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.arrow {
+    transition: var(--transition-duration);
+}
+
+.description input:checked ~ label .arrow {
+    transform: rotate(-180deg);
+}
+
+.descriptionDown {
+    transition: var(--transition-duration);
+    display: none;
+    height: 1px;
+    opacity: 0;
+}
+
+.description input:checked ~ .descriptionDown {
+    display: block;
+    height: auto;
+    opacity: 1;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--margin-m);
+    padding: 0;
+    grid-column: 2/2;
+    grid-row: 1/3;
+}
+
+.img {
+    width: 100%;
+}
