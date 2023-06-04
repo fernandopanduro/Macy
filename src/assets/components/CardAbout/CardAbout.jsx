@@ -2,7 +2,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Button from '../Button/Button';
 import styles from './CardAbout.module.css';
 
-export default function CardAbout({ name, occupation, study, img, translateX, translateY }) {
+export default function CardAbout({ name, occupation, study, img, imgAvif, imgWebp, translateX, translateY }) {
   return (
     <div className={styles.cardAbout}>
         <div className={styles.parallax}>
@@ -13,7 +13,9 @@ export default function CardAbout({ name, occupation, study, img, translateX, tr
                     translateX={translateX}
                     translateY={translateY}>
                     <picture className={styles.picture}>
-                        <img className={styles.img} src={img} alt="" />
+                        <source srcSet={imgWebp} type='image/webp'/>
+                        <source srcSet={imgAvif} type='image/avif'/>
+                        <img width='300' height='300' decoding="async" loading="lazy" className={styles.img} src={img} alt="" />
                     </picture>
                 </Parallax>
             </ParallaxProvider>

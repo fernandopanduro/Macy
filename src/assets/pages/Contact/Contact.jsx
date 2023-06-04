@@ -2,6 +2,7 @@ import Button from '../../components/Button/Button';
 import styles from './Contact.module.css';
 
 export default function Contact() {
+  window.scrollTo(0, 0)
   return (
     <section className={`container ${styles.contact}`}>
         <h2 className={`title ${styles.title}`}>Tus inquietudes, nuestros correos.</h2>

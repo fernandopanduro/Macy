@@ -30,6 +30,7 @@ import Order from '../../components/Order/Order';
 
 
 export default function Home() {
+  window.scrollTo(0, 0)
   return (
     <>
     <section className={styles.section}>
@@ -40,7 +41,7 @@ export default function Home() {
       </div>
 
       <div className='container'>
-        <h2 className={`title ${styles.title}`}>Steasy is a mobile mini-steamer with built-in battery. With it, you can heat up your pre-cooked lunch anywhere with high quality.</h2>
+        <h2 className={`title ${styles.title}`}>Mazy is a mobile mini-steamer with built-in battery. With it, you can heat up your pre-cooked lunch anywhere with high quality.</h2>
       </div>
 
       <div className={`${styles.gallery}`}>
@@ -83,7 +84,7 @@ export default function Home() {
         <ParallaxCard img2={product} img2Avif={productAvif} img2Webp={productWebp} img1={benefits02} img1Webp={benefits02Webp} img1Avif={benefits02Avif} />
         <div className={`${styles.containerDescription}`}>
           <h2 className='title'>Smart steaming on the go. High-quality, contemporary and user-friendly.</h2>
-          <p className='paragraph'>Steasy is easy to use via app and you can even time your meal in advance. Thanks to the innovative closure system, Steasy is not only spill-proof to transport but also odor-free when steaming.</p>
+          <p className='paragraph'>Mazy is easy to use via app and you can even time your meal in advance. Thanks to the innovative closure system, Mazy is not only spill-proof to transport but also odor-free when steaming.</p>
           <Button text='Product Details' to='/productdetails' />
         </div>
       </div>

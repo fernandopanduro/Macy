@@ -16,6 +16,8 @@ import { AiOutlineDown } from 'react-icons/ai'
 
 export default function Order() {
 
+  window.scrollTo(0, 0)
+
   return (
     <div className={`container ${styles.order}`}>
         <div className={styles.description}>
@@ -72,7 +74,7 @@ export default function Order() {
                   <AiOutlineDown size={20} className={styles.arrow} />
                 </label>
                 <div className={styles.descriptionDown}>
-                <p>Steasy is a mobile mini-steamer with built-in battery. With it, you can heat up your pre-cooked lunch anywhere with high quality. Steasy offers space for dishes up to 450 g. Steaming takes only 15 minutes and you can enjoy your lunch hot and directly from the stainless steel food bowl. In addition, you can easily operate Steasy via app and can even time your meal in advance. Thanks to the innovative closure system, Steasy is not only leak-proof to transport, but also odor-free during steaming.</p>
+                <p>Mazy is a mobile mini-steamer with built-in battery. With it, you can heat up your pre-cooked lunch anywhere with high quality. Mazy offers space for dishes up to 450 g. Steaming takes only 15 minutes and you can enjoy your lunch hot and directly from the stainless steel food bowl. In addition, you can easily operate Mazy via app and can even time your meal in advance. Thanks to the innovative closure system, Mazy is not only leak-proof to transport, but also odor-free during steaming.</p>
                 </div>
             </div>
             <div className={styles.description}>
@@ -96,7 +98,7 @@ export default function Order() {
                 <AiOutlineDown size={20} className={styles.arrow} />
               </label>
               <div className={styles.descriptionDown}>
-                <p>1x Steasy</p>
+                <p>1x Mazy</p>
                 <p>1x stainless steel food tray</p>
                 <p>1x charging cable</p>
                 <p>App included</p>
