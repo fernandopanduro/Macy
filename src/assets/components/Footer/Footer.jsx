@@ -14,7 +14,7 @@ export default function Footer() {
                     <h4 className={styles.title}>Newsletter</h4>
                     <label className={styles.newsletter} htmlFor="newsletter">
                         <input className={styles.newsletterInput} type="email" autoComplete='email' required placeholder='Email' />
-                        <button name='Arrow Newsletter' className={styles.btn}><AiOutlineArrowRight className={styles.newsletterRight} size={25} /></button>
+                        <button aria-label="Arrow Newsletter" title='Arrow Newsletter' name='Arrow Newsletter' className={styles.btn}><AiOutlineArrowRight className={styles.newsletterRight} size={25} /></button>
                     </label>
                 </div>
                 <div className={styles.sectionFooter}>
@@ -59,15 +59,15 @@ export default function Footer() {
                     <nav className={styles.nav}>
                         <ul className={`${styles.list} ${styles.listSocial}`}>
                             <li className={styles.listItem}>
-                                <a className={styles.listLink} href='#' name='Instagram' target='_blank'><BsInstagram size={25}/></a>
+                                <a className={styles.listLink} href='#' aria-label="Instagram" title='Instagram' name='Instagram' target='_blank'><BsInstagram size={25}/></a>
                                 <span className={styles.listBar}></span>
                             </li>
                             <li className={styles.listItem}>
-                                <a className={styles.listLink} href='#' name='Facebook' target='_blank'><BsFacebook size={25}/></a>
+                                <a className={styles.listLink} href='#' aria-label="Facebook" title='Facebook' name='Facebook' target='_blank'><BsFacebook size={25}/></a>
                                 <span className={styles.listBar}></span>
                             </li>
                             <li className={styles.listItem}>
-                                <a className={styles.listLink} href='#' name='Pinterest' target='_blank'><BsPinterest size={25}/></a>
+                                <a className={styles.listLink} href='#' aria-label="Pinterest" title='Pinterest' name='Pinterest' target='_blank'><BsPinterest size={25}/></a>
                                 <span className={styles.listBar}></span>
                             </li>
                         </ul>

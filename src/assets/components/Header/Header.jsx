@@ -47,7 +47,7 @@ export default function Header() {
 
           <div className={styles.btns}>
             <Button text='Order' to='/order'/>
-            <button className={`${styles.btnCart} ${styles.btn}`} name='Cart'><BsCart2 size={25}/></button>
+            <button className={`${styles.btnCart} ${styles.btn}`} aria-label="Cart" title='Cart' name='Cart'><BsCart2 size={25}/></button>
           </div>
 
       </header>
