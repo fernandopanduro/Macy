@@ -21,6 +21,7 @@ import Order from '../../components/Order/Order';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default function About() {
+  window.scrollTo(0, 0);
   return (
     <main className={`container ${styles.about}`}>
 

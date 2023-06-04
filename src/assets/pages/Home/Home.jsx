@@ -85,7 +85,7 @@ export default function Home() {
         <div className={`${styles.containerDescription}`}>
           <h2 className='title'>Smart steaming on the go. High-quality, contemporary and user-friendly.</h2>
           <p className='paragraph'>Mazy is easy to use via app and you can even time your meal in advance. Thanks to the innovative closure system, Mazy is not only spill-proof to transport but also odor-free when steaming.</p>
-          <Button text='Product Details' to='/productdetails' />
+          <Button text='Contact' to='/contact' />
         </div>
       </div>
       <Order />
